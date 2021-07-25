@@ -1,0 +1,59 @@
+.ninja-card {
+  background-color: white;
+  width: 90%;
+  margin: 2vw auto 2vw;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 20px #efefef;
+  -webkit-box-shadow: 0px 0px 20px 20px #efefef;
+  -moz-box-shadow: 0px 0px 20px 20px #efefef;
+}
+
+.ninja-avatar {
+  display: block;
+  width: 70%;
+  height: 20rem;
+  margin: 0 auto;
+}
+
+.ninja-info,
+.ninja-social {
+  width: 50%;
+  float: left;
+  height: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  padding: 0 10px;
+}
+.social-icons a {
+  padding: 0 0.2vw;
+}
+
+.github-icon,
+.linkedin-icon,
+.twitter-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.github-icon {
+  content: url("../../github-logo.svg");
+}
+.linkedin-icon {
+  content: url("../../linkedin-logo.svg");
+}
+.twitter-icon {
+  content: url("../../twitter-logo.svg");
+}
+.ninja-info {
+  text-align: center;
+}
+.info-body > p {
+  margin: 0;
+  line-height: 2vw;
+  font-family: Verdana;
+  font-weight: 500;
+}
