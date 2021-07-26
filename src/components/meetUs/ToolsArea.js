@@ -1,31 +1,36 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
+
 import fetchEmployees from "../../services/fetchEmployees";
 import "./tools-area.css";
 
 const ToolsArea = () => {
   const { employeeName, setEmployeeName } = useState("");
+  const { office, setOffice } = useState("");
   const [employees, setEmployees] = useState([]);
 
   const getEmployees = () => {
     fetchEmployees().then((data) => setEmployees(data));
   };
-
   useEffect(() => getEmployees(), []);
 
-  function filterByName(demandedName) {
-    //array den filtreleme
-    let filteredNames = [];
-    filteredNames.push(employees.filter((name) => name === demandedName));
+  const filterName = () => {
+    let arr = [];
 
-    if (filteredNames.length > 0) return filteredNames;
-    return toast.error("Employee not found!");
-  }
+    employees.map((e) => {
+      if (e.name === employeeName) arr.push(employeeName);
+      return employeeName;
+    });
+
+    if (arr.length < 1) return toast.error("Employee not found!");
+    return arr;
+  };
+
   return (
     <>
       <div className="area">
-        <div>
+        <div onChange={setOffice}>
           <h4>Filter by Office</h4>
           <input type="radio" value="Borlänge" name="filter-by-office" />
           Borlänge

@@ -3,31 +3,36 @@
   width: 90%;
   margin: 2vw auto 2vw;
   border: none;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px 20px #efefef;
-  -webkit-box-shadow: 0px 0px 20px 20px #efefef;
-  -moz-box-shadow: 0px 0px 20px 20px #efefef;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px #cacaca;
+  -webkit-box-shadow: 0px 0px 10px 1px #cacaca;
+  -moz-box-shadow: 0px 0px 10px13px #cacaca;
 }
 
 .ninja-avatar {
   display: block;
-  width: 70%;
-  height: 20rem;
+  width: 65%;
   margin: 0 auto;
+}
+
+.default-avatar {
+  content: url("../../default-user-pp.svg");
+  display: block;
+  width: 65%;
+  margin: 10% auto;
 }
 
 .ninja-info,
 .ninja-social {
   width: 50%;
   float: left;
-  height: 6vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .social-icons {
-  padding: 0 10px;
+  padding: 10%;
 }
 .social-icons a {
   padding: 0 0.2vw;
@@ -52,8 +57,9 @@
   text-align: center;
 }
 .info-body > p {
-  margin: 0;
+  margin: 0 auto;
   line-height: 2vw;
   font-family: Verdana;
   font-weight: 500;
+  text-align: left;
 }

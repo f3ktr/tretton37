@@ -7,11 +7,7 @@ export const NinjaCard = (props) => {
       {props.imgUrl != null ? (
         <img className="ninja-avatar" src={props.imgUrl} alt="ninja-avatar" />
       ) : (
-        <img
-          className="ninja-avatar"
-          src="src\default-user-pp.svg"
-          alt="default-img"
-        />
+        <img className="default-avatar" alt="default-img" />
       )}
       <div className="ninja-info">
         <div className="info-body">

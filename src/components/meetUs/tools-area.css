@@ -5,8 +5,8 @@
   padding: 1%;
   margin: 0 auto;
   border: none;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px 20px #efefef;
-  -webkit-box-shadow: 0px 0px 20px 20px #efefef;
-  -moz-box-shadow: 0px 0px 20px 20px #efefef;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #cacaca;
+  -webkit-box-shadow: 0px 0px 10px 1px #cacaca;
+  -moz-box-shadow: 0px 0px 10px 1px #cacaca;
 }

@@ -15,7 +15,6 @@ const MeetUsPage = () => {
   useEffect(() => getEmployees(), []);
 
   function filterByName(demandedName) {
-    //array den filtreleme
     let filteredNames = [];
     filteredNames.push(employees.filter((name) => name === demandedName));
 
