@@ -8,24 +8,6 @@ import "./tools-area.css";
 const ToolsArea = () => {
   const { employeeName, setEmployeeName } = useState("");
   const { office, setOffice } = useState("");
-  const [employees, setEmployees] = useState([]);
-
-  const getEmployees = () => {
-    fetchEmployees().then((data) => setEmployees(data));
-  };
-  useEffect(() => getEmployees(), []);
-
-  const filterName = () => {
-    let arr = [];
-
-    employees.map((e) => {
-      if (e.name === employeeName) arr.push(employeeName);
-      return employeeName;
-    });
-
-    if (arr.length < 1) return toast.error("Employee not found!");
-    return arr;
-  };
 
   return (
     <>

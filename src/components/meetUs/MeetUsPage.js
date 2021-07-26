@@ -14,13 +14,6 @@ const MeetUsPage = () => {
 
   useEffect(() => getEmployees(), []);
 
-  function filterByName(demandedName) {
-    let filteredNames = [];
-    filteredNames.push(employees.filter((name) => name === demandedName));
-
-    if (filteredNames.length > 0) return filteredNames;
-    return toast.error("Employee not found!");
-  }
   return (
     <>
       <div className="meet-us">
