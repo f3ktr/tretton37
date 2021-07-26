@@ -11,7 +11,6 @@ const fetchEmployees = async () => {
     })
     .then((res) => {
       users = res.data;
-      console.log(users);
     });
   return users;
 };
