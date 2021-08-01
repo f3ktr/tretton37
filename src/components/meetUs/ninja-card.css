@@ -1,12 +1,12 @@
 .ninja-card {
   background-color: white;
-  width: 90%;
-  margin: 2vw auto 2vw;
+  width: auto;
+  margin: 2vw 0 2vw;
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 1px #cacaca;
   -webkit-box-shadow: 0px 0px 10px 1px #cacaca;
-  -moz-box-shadow: 0px 0px 10px13px #cacaca;
+  -moz-box-shadow: 0px 0px 10px 13px #cacaca;
 }
 
 .ninja-avatar {

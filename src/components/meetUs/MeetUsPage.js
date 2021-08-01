@@ -4,18 +4,33 @@ import fetchEmployees from "../../services/fetchEmployees";
 import { NinjaCard } from "./NinjaCard";
 import { toast } from "react-toastify";
 import "./meet-us.css";
+import ToolsArea from "./ToolsArea";
 
 const MeetUsPage = () => {
   const [employees, setEmployees] = useState([]);
+  const [employeeNameFilter, setEmployeeNameFilter] = useState("");
+  const [officeFilter, setOfficeFilter] = useState("");
 
-  const getEmployees = () => {
-    fetchEmployees().then((data) => setEmployees(data));
+  useEffect(() => {
+    fetchEmployees(employeeNameFilter, officeFilter).then((data) =>
+      setEmployees(data)
+    );
+  }, [employeeNameFilter, officeFilter]);
+
+  const callBackForName = (childData) => {
+    setEmployeeNameFilter(childData);
   };
 
-  useEffect(() => getEmployees(), []);
+  const callBackForOffice = (childData) => {
+    setOfficeFilter(childData);
+  };
 
   return (
     <>
+      <ToolsArea
+        callBackForName={callBackForName}
+        callBackForOffice={callBackForOffice}
+      />
       <div className="meet-us">
         <div className="grid">
           {employees.map((e, index) => {
@@ -27,7 +42,7 @@ const MeetUsPage = () => {
                 gitHub={e.gitHub}
                 linkedIn={e.linkedIn}
                 twitter={e.twitter}
-                imgUrl={e.imagePortraitUrl}
+                imgUrl={e.imgUrl}
               />
             );
           })}
