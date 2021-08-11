@@ -28,7 +28,7 @@ export const NinjaCard = (props) => {
                 <i className="github-icon" />
               </a>
             )}
-            {props.linkedin &&(
+            {
               <a
                 className="linkedin"
                 href={`https://linkedin.com/in/${props.linkedIn}`}
