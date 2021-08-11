@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import fetchEmployees from "../../services/fetchEmployees";
 import { NinjaCard } from "./NinjaCard";
-import { toast } from "react-toastify";
 import "./meet-us.css";
 import ToolsArea from "./ToolsArea";
 

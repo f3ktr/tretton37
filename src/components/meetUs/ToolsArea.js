@@ -23,23 +23,34 @@ const ToolsArea = (props) => {
 
   return (
     <>
-      <div className="area">
-        <div onChange={handleOfficeChange}>
+      <div className="tools-area">
+        <div className="office-filter-box" onChange={handleOfficeChange}>
           <h4>Filter by Office</h4>
-          <input type="radio" value="" name="filter-by-office" defaultChecked />
-          All
-          <input type="radio" value="Borlänge" name="filter-by-office" />
-          Borlänge
-          <input type="radio" value="Lund" name="filter-by-office" />
-          Lund
-          <input type="radio" value="Helsingborg" name="filter-by-office" />
-          Helsingborg
-          <input type="radio" value="Stockholm" name="filter-by-office" />
-          Stockholm
+          <div className="radio-list">
+            <input
+              type="radio"
+              value=""
+              name="filter-by-office"
+              defaultChecked
+            />
+            All
+            <input type="radio" value="Borlänge" name="filter-by-office" />
+            Borlänge
+            <input type="radio" value="Lund" name="filter-by-office" />
+            Lund
+            <input type="radio" value="Helsingborg" name="filter-by-office" />
+            Helsingborg
+            <input type="radio" value="Stockholm" name="filter-by-office" />
+            Stockholm
+          </div>
         </div>
-        <div>
-          <h4>Filter by Name</h4>
+        <div className="name-filter-box">
+          <h4>
+            <i class="fa fa-search"></i> Look for a <em>tretton3r</em>
+          </h4>
+
           <input
+            className="search"
             type="text"
             name="filter-by-name"
             placeholder="Search Name"

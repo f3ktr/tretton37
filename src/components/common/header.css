@@ -1,4 +1,10 @@
 .header {
   color: #3b3b3b;
-  font-family: "Verdana";
+}
+
+.tretton-text {
+  background: linear-gradient(#5ccc2f, #000cb9d0, #5ccc2f, #000fd6b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

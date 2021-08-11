@@ -1,12 +1,51 @@
-.area {
+.tools-area {
   background-color: white;
-  max-width: 1600px;
+  width: 100%;
   position: center;
-  padding: 1%;
-  margin: 0 auto;
+  margin: 0;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px #cacaca;
   -webkit-box-shadow: 0px 0px 10px 1px #cacaca;
   -moz-box-shadow: 0px 0px 10px 1px #cacaca;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.office-filter-box,
+.name-filter-box {
+  padding: 1%;
+}
+.h4 {
+  border: 1px;
+  border-radius: 10px;
+}
+
+.search {
+  border: 3px solid #80c565;
+  width: 50%;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.search:focus {
+  color: #00b4cc;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tools-area {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #cacaca;
+    -webkit-box-shadow: 0px 0px 10px 1px #cacaca;
+    -moz-box-shadow: 0px 0px 10px 1px #cacaca;
+    float: left;
+  }
+  .office-filter-box {
+    float: left;
+  }
 }
