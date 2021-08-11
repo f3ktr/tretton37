@@ -23,12 +23,12 @@ export const NinjaCard = (props) => {
         </div>
         <div className="ninja-social">
           <div className="social-icons">
-            {
+            {props.gitHub && (
               <a className="github" href={`https://github.com/${props.gitHub}`}>
                 <i className="github-icon" />
               </a>
-            }
-            {
+            )}
+            {props.linkedin &&(
               <a
                 className="linkedin"
                 href={`https://linkedin.com/in/${props.linkedIn}`}
